@@ -1,5 +1,5 @@
 
-
+const backend = import.meta.env.VITE_URL;
 
 export const toggleClass = (el,className) => {
   let elem = document.querySelector(el);
@@ -10,5 +10,5 @@ export const removeClass = (el,className) => {
   let elem = document.querySelector(el);
   elem.classList.remove(className);
 };
-const URL =  process.env.api_base_url;
-export const api_base_url = URL ;
+       
+export const api_base_url = backend;
